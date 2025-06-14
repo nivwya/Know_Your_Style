@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+        html{
+            margin: 0 100px 0 100px ;
+            background-color: #FFD5F3;
+        }
+        header{
+            align-items: center;
+            background-color: #8633FF;
+            padding:5px 10px;
+        }
+        #ho{
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size:35px;
+        }
+        #he{
+            text-align: right;
+        }
+        #hi{
+            background-color: #83A260;
+            padding:2px 4px;
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        ul li{
+            margin-left: 34px;
+            list-style: none;
+            font-size: medium;
+        }
+        ul li a{
+            color: white;
+            text-decoration: aliceblue;
+        }
+        a:hover { color: palevioletred; }
+
+
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px auto;
+    padding: 0 20px;
+}
+ 
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #80837f;
+}
+ 
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+ 
+.nav-links li {
+    margin-right: 20px;
+}
+ 
+.nav-links a {
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+ 
+.nav-links a:hover {
+    background-color: #696b68;
+    border-radius: 4px;
+    color: white;
+}
+ 
+/* About Section */
+ 
+.about {
+    background: rgb(224, 251, 222);
+    background: linear-gradient(360deg, rgb(245, 255, 245) 0%, rgb(173, 252, 163) 100%);
+    padding: 100px 0 20px 0;
+    text-align: center;
+}
+ 
+.about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+ 
+.about p {
+    font-size: 1rem;
+    color: #3c3d3c;
+    max-width: 800px;
+    margin: 0 auto;
+}
+ 
+.about-info {
+    margin: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+ 
+.about-img {
+    width: 20rem;
+    height: 20rem;
+ 
+}
+ 
+.about-img img {
+    width: 90%;
+    height: 90%;
+    border-radius: 5px;
+    object-fit: contain;
+}
+ 
+.about-info p {
+    font-size: 1.3rem;
+    margin: 0 2rem;
+    text-align: justify;
+}
+ 
+#bb {
+    border: none;
+    outline: 0;
+    padding: 10px;
+    margin: 2rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #226e43;
+    text-align: center;
+    cursor: pointer;
+    width: 15rem;
+    border-radius: 4px;
+}
+ 
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+ 
+@media (max-width: 768px) {
+    nav {
+        display: block;
+    }
+ 
+    .logo {
+        text-align: center;
+    }
+ 
+    .nav-links {
+        margin-top: 1rem;
+        justify-content: space-between;
+    }
+ 
+    .nav-links li {
+        margin-right: 0;
+    }
+ 
+    .about h1 {
+        font-size: 2rem;
+    }
+ 
+    .about p {
+        font-size: 0.9rem;
+    }
+ 
+    .about-info {
+        flex-direction: column;
+        text-align: center;
+    }
+ 
+    .about-img {
+        width: 60%;
+        height: 100%;
+        margin-bottom: 1rem;
+    }
+ 
+    .about-info p {
+        margin: 1rem 2rem;
+    }
+ 
+    .about-info button {
+        margin: 1rem 2rem;
+        width: 10rem;
+    }
+ 
+    .team {
+        margin: 0 1rem;
+    }
+}
+
+/*side menu*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/*side menu*/
+
+</style>
+
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <header>
+      <table>
+        <tr>
+          <td>
+            <h1 id="ho"> <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> TOP FASHION STYLES & TRENDS &emsp;&emsp; &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</h1>
+          </td>
+          <td>
+              <i class="fa fa-user" style="display: block; font-size:48px;color:#8A1E7D;"></i>
+          </td>
+        </tr>
+      </table>
+        <div id="he">
+            <label for="gsearch">Search:</label>
+            <input type="search" id="gsearch" name="gsearch">
+            <button>search</button>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times;</a>
+            <a href="!HOMEPAGE.html">Home</a>
+            <a href="aboutus.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+        </div>
+    </header>
+    <div id="hi">
+        <ul>
+            <li><a href="!HOMEPAGE.html">^Home</a></li>
+            <li><a href="y2k.html">^Y2K</a></li>
+            <li><a href="GRUDGE.html">^Grudge</a></li>
+            <li><a href="COKET.html">^Couquette</a></li>
+            <li><a href="acubi.html">^Acubi</a></li>
+            <li><a href="SPORTS.html">^Sports</a></li>
+            <li><a href="#">^Shop</a></li>
+        </ul>
+    </div>
+</head>
+ 
+<body> 
+    <section class="about">
+        <h1>About Us</h1>
+        <div class="about-info">
+            <div class="about-img">
+                <img src="about.jpg" >
+            </div>
+            <div>
+            <p> 
+                Welcome to our vibrant world of fashion where individuality meets creativity, 
+                and trends are redefined every day. Here, we are dedicated to unraveling the diverse tapestry of fashion styles 
+                and trends that shape our ever-evolving sartorial landscape.
+            </p>
+            <br>
+            <p>
+
+                Our journey began with a simple yet profound belief: 
+                fashion is more than just clothing; it's a form of self-expression, 
+                a cultural statement, and an art form in its own right. With this ethos at our core, 
+                we embarked on a mission to celebrate the kaleidoscope of styles that make each person unique.
+            </p>
+            <br>
+            <p>    
+                Here, we understand that fashion is not just about following trends; 
+                it's about embracing individuality and empowering self-confidence. 
+                That's why we strive to create a welcoming space where everyone can explore their personal style 
+                journey without boundaries or limitations.
+            </p>  
+            <br>
+            <p>     
+                Join us on a journey through the ever-changing landscape of fashion, 
+                where every style tells a story and every trend is an opportunity for self-expression. 
+                At [Company Name], the adventure never ends, and the possibilities are as limitless as your imagination.
+            </p>
+            <br>
+                <button id="bb">Read More...</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>© 2000 RETRO fashionstylesandtrends. All Rights Reserved.</p>
+    </footer>
+</body>
+ 
+</html>

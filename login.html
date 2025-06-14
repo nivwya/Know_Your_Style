@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    html{
+            margin: 0 100px 0 100px ;
+            background-color: #FFD5F3;
+        }
+        header{
+            align-items: center;
+            background-color: #8633FF;
+            padding:5px 10px;
+        }
+        #ho{
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size:35px;
+        }
+        #he{
+            text-align: right;
+        }
+        #hi{
+            background-color: #83A260;
+            padding:2px 4px;
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        ul li{
+            margin-left: 34px;
+            list-style: none;
+            font-size: medium;
+        }
+        ul li a{
+            color: white;
+            text-decoration: aliceblue;
+        }
+        a:hover { color: palevioletred; }
+
+
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px auto;
+    padding: 0 20px;
+}
+ 
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #80837f;
+}
+ 
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+ 
+.nav-links li {
+    margin-right: 20px;
+}
+ 
+.nav-links a {
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+ 
+.nav-links a:hover {
+    background-color: #696b68;
+    border-radius: 4px;
+    color: white;
+}
+
+
+/*side menu*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/*side menu*/
+
+/*login*/
+
+.iii {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+    background: #f3f3f3;
+    flex-direction: column;
+    margin: 0;
+}
+ 
+.main {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    transition: transform 0.2s;
+    width: 500px;
+    text-align: center;
+}
+
+.labell {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #555;
+    font-weight: bold;
+}
+ 
+ 
+.inputt {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+ 
+#bbb button {
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: #4CAF50;
+    width: 100%;
+    font-size: 16px;
+}
+ 
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*login*/
+
+</style>
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+
+    /*login*/
+    
+    function myFunction(){
+    document.getElementById('loginform').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var username = document.getElementById('usernameLogin').value;
+            var password = document.getElementById('passwordLogin').value;
+
+            if (username === 'nivi' && password === '123') {
+
+                if (window.confirm('Successfully logged in. Click OK to proceed.')) {
+                    window.location.href = '!HOMEPAGE.html';
+                }
+            } else {
+                alert('Invalid username/password');
+            }
+        });
+    }
+    /*login*/
+</script>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <header>
+      <table>
+        <tr>
+          <td>
+            <h1 id="ho"> <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> TOP FASHION STYLES & TRENDS &emsp;&emsp;&emsp; &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</h1>
+          </td>
+          <td>
+              <i class="fa fa-user" style="display: block; font-size:48px;color:#8A1E7D;"></i>
+          </td>
+        </tr>
+      </table>
+        <div id="he">
+            <label for="gsearch">Search:</label>
+            <input type="search" id="gsearch" name="gsearch">
+            <button>search</button>
+        </div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times;</a>
+                <a href="!HOMEPAGE.html">Home</a>
+                <a href="aboutus.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Login</a>
+            </div>
+        </header>
+        <div id="hi">
+            <ul>
+                <li><a href="!HOMEPAGE.html">^Home</a></li>
+                <li><a href="y2k.html">^Y2K</a></li>
+                <li><a href="GRUDGE.html">^Grudge</a></li>
+                <li><a href="COKET.html">^Couquette</a></li>
+                <li><a href="acubi.html">^Acubi</a></li>
+                <li><a href="SPORTS.html">^Sports</a></li>
+                <li><a href="SPORTS.html">^Shop</a></li>
+            </ul>
+        </div>
+    
+</head>
+
+<body>
+    <div class="iii">
+        <div class="main">
+            <h3>Login Form</h3>
+            <form id="loginform">
+                <label class="labell" for="first">Username:</label>
+                <input class="inputt" type="text" id="usernameLogin" name="name" placeholder="Enter your Username" required>
+                <label class="labell" for="password"> Password: </label>
+                <input class="inputt" type="password" id="passwordLogin" name="password" placeholder="Enter your Password" required>
+     
+                <div class="wrap">
+                    <button id="bbb" type="submit" onclick="myFunction()">Submit</button>
+                    <br>
+                </div>
+            </form>
+            <p>Not registered? <a href="register.html" style="text-decoration: none;"> Register </a> </p>
+        </div>
+    </div>
+
+</body>
+</html>

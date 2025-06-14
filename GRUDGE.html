@@ -1,0 +1,353 @@
+<html>
+    <style>
+                html{
+            margin: 0 100px 0 100px ;
+        }
+        header{
+            align-items: center;
+            background-color: #8633FF;
+            padding:5px 10px;
+        }
+        #ho{
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size:35px;
+        }
+        #he{
+            text-align: right;
+        }
+        #hi{
+            background-color: #83A260;
+            padding:2px 4px;
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        ul li{
+            margin-left: 34px;
+            list-style: none;
+            font-size: medium;
+        }
+        ul li a{
+            color: white;
+            text-decoration: aliceblue;
+        }
+        a:hover { color: palevioletred; }
+
+
+
+        .hero{
+            background-image: url('gliter.jpg');
+            padding:70px 60px;
+            display:flex;
+            text-align: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .hero h2{
+            font-size: 48px;
+        }
+        .hero p{
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        .main-content{
+            background-color: whitesmoke;
+            padding: 40px;
+            border-radius: 10px;
+        }
+        .books{
+            display: grid;
+            grid-template-columns:repeat(3,1fr);
+            grid-gap: 20px;
+        }
+        .book{
+            display: flex;
+            text-align: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .book img{
+            max-width: 100%;
+            margin-bottom: 10px;
+            border:solid;
+        }
+        h3{
+            font-weight: normal;
+            font-size: 24px;
+            margin-top: 0;
+        }
+        p{
+            font-weight: normal;
+            margin-top: 5px;
+        }
+        img{
+            width: 250px;
+            height:300px;
+        }
+        html{
+            background-color: #FFD5F3;
+        }
+        .b{
+            background-color: #B49BB6;
+        }
+
+        /*side menu*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/*side menu*/
+
+/*images*/
+
+#image img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border:5px solid #000000; padding:3px; margin:5px;
+}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/*images*/
+
+        
+    </style>
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <header>
+          <table>
+            <tr>
+              <td>
+                <h1 id="ho"> <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> TOP FASHION STYLES & TRENDS &emsp;&emsp; &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</h1>
+              </td>
+              <td>
+                  <i class="fa fa-user" style="display: block; font-size:48px;color:#8A1E7D;"></i>
+              </td>
+            </tr>
+          </table>
+            <div id="he">
+                <label for="gsearch">Search:</label>
+                <input type="search" id="gsearch" name="gsearch">
+                <button>search</button>
+            </div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times;</a>
+                <a href="!HOMEPAGE.html">Home</a>
+                <a href="aboutus.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Login</a>
+            </div>
+        </header>
+        <div id="hi">
+            <ul>
+                <li><a href="!HOMEPAGE.html">^Home</a></li>
+                <li><a href="y2k.html">^Y2K</a></li>
+                <li><a href="GRUDGE.html">^Grudge</a></li>
+                <li><a href="COKET.html">^Couquette</a></li>
+                <li><a href="acubi.html">^Acubi</a></li>
+                <li><a href="SPORTS.html">^Sports</a></li>
+                <li><a href="#">^Shop</a></li>
+            </ul>
+        </div>
+    </head>
+
+    <body>
+        <div class="hero">
+            <div class="hero-content">
+                <h2> Welcome to the GRUDGE fashion</h2>
+                    <div class="books">
+                        <div class="book">
+                            <img src="grudge1.jpg">
+                            <button class="b"> BUY </button>
+                            <p>$5</p>
+                        </div>
+                        <div class="book">
+                            <img src="grudge2.jpg">
+                            <button class="b"> BUY </button>
+                            <p>$5</p>
+                        </div>
+                        <div class="book">
+                            <img src="grudge3.jpg">
+                            <button class="b"> BUY </button>
+                            <p>$5</p>
+                        </div>
+                        <div class="book">
+                            <img src="grudge4.jpg">
+                            <button class="b"> BUY </button>
+                            <p>$5</p>
+                        </div> 
+                        <div class="book">
+                            <img src="grudge5.jpg">
+                            <button class="b"> BUY </button>
+                            <p>$5</p>
+                        </div> 
+                        <div class="book">
+                            <img src="grudge6.jpg">
+                            <button class="b"> BUY </button>
+                            <p>$5</p>
+                        </div> 
+                        <div class="book">
+                            <img src="grudge7.jpg">
+                            <button class="b"> BUY </button>
+                            <p>$5</p>
+                        </div> 
+                        <div class="book">
+                            <img src="grudge8.jpg">
+                            <button class="b"> BUY </button>
+                            <p>$5</p>
+                        </div> 
+                        <div class="book">
+                            <img src="top3.jpg">
+                            <button class="b"> BUY </button>
+                            <p>$5</p>
+                        </div> 
+                    
+                    </div>
+            </div>
+        </div>
+
+        <div id="image">
+            <a href="summer.html"> <img src="summer.jpg" alt="Avatar" style="width:200px" > </a>
+            <a href="winter.html"> <img src="winterr.jpg" alt="Avatar" style="width:200px" > </a>
+              <a href="y2k.html"> <img src="y2k.jpg" alt="Avatar" style="width:200px" > </a>
+              <a href="GRUDGE.html"> <img src="grudge.jpg" alt="Avatar" style="width:200px" > </a>
+              <a href="COKET.html"> <img src="couquette.jpg" alt="Avatar" style="width:200px" > </a>
+              <a href="acubi.html"> <img src="acubi.jpg" alt="Avatar" style="width:200px" > </a>
+              <a href="SPORTS.html"> <img src="sports.jpg" alt="Avatar" style="width:200px" > </a>
+          </div>
+
+    </body>
+    
+    </html>

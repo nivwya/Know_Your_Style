@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    html{
+            margin: 0 100px 0 100px ;
+            background-color: #FFD5F3;
+        }
+        header{
+            align-items: center;
+            background-color: #8633FF;
+            padding:5px 10px;
+        }
+        #ho{
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size:35px;
+        }
+        #he{
+            text-align: right;
+        }
+        #hi{
+            background-color: #83A260;
+            padding:2px 4px;
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        ul li{
+            margin-left: 34px;
+            list-style: none;
+            font-size: medium;
+        }
+        ul li a{
+            color: white;
+            text-decoration: aliceblue;
+        }
+        a:hover { color: palevioletred; }
+
+
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px auto;
+    padding: 0 20px;
+}
+ 
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #80837f;
+}
+ 
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+ 
+.nav-links li {
+    margin-right: 20px;
+}
+ 
+.nav-links a {
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+ 
+.nav-links a:hover {
+    background-color: #696b68;
+    border-radius: 4px;
+    color: white;
+}
+
+/*contact */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/*contact*/
+
+/*side menu*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/*side menu*/
+
+</style>
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <header>
+    <table>
+      <tr>
+        <td>
+          <h1 id="ho"> <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> TOP FASHION STYLES & TRENDS &emsp;&emsp; &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</h1>
+        </td>
+        <td>
+            <i class="fa fa-user" style="display: block; font-size:48px;color:#8A1E7D;"></i>
+        </td>
+      </tr>
+    </table>
+      <div id="he">
+          <label for="gsearch">Search:</label>
+          <input type="search" id="gsearch" name="gsearch">
+          <button>search</button>
+      </div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times;</a>
+                <a href="!HOMEPAGE.html">Home</a>
+                <a href="aboutus.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Login</a>
+            </div>
+        </header>
+        <div id="hi">
+            <ul>
+                <li><a href="!HOMEPAGE.html">^Home</a></li>
+                <li><a href="y2k.html">^Y2K</a></li>
+                <li><a href="GRUDGE.html">^Grudge</a></li>
+                <li><a href="COKET.html">^Couquette</a></li>
+                <li><a href="acubi.html">^Acubi</a></li>
+                <li><a href="SPORTS.html">^Sports</a></li>
+                <li><a href="SPORTS.html">^Shop</a></li>
+            </ul>
+        </div>
+    
+</head>
+
+<body>
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="contact.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="india">India</option>
+          <option value="dubai">USA</option>
+        </select>
+        <label for="contact">Contact Number:</label>
+        <input type="tel" id="contact" name="country code, yours number" placeholder="Your number..">
+        <br>
+        <br>
+        <label for="subject">Subject:</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
